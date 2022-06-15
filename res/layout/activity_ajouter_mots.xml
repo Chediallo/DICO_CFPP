@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Edit text pour le message d'acceuil dans ajout mots-->
+    <TextView
+        android:id="@+id/editDico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:text="FRANCAIS"/>
+
+
+    <!--EditText pour la description du mot-->
+    <EditText
+        android:id="@+id/editMotsFr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:hint="Mots"
+        android:textColor="@color/black" />
+
+    <!--Edit text pour le bloc nom et genre-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--text view pour le mots en français-->
+        <EditText
+            android:id="@+id/editTypeFr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:hint="Type Mots"
+            android:textColor="@color/black" />
+
+
+        <!--text view pour genre du mots-->
+        <EditText
+            android:id="@+id/editGenreFr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:hint="Genre"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <!--EditText pour exemple du mot-->
+    <EditText
+        android:id="@+id/editExempleFr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:hint="Exemple"
+        android:textColor="@color/black" />
+
+
+
+    <!--EditText pour la description du mot-->
+    <EditText
+        android:id="@+id/editDescriptionFr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:hint="Description"
+        android:textColor="@color/black" />
+
+
+    <!--Edit text pour le bloc nom et genre-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--Edit text pour le mots en français-->
+        <EditText
+            android:id="@+id/editSynonymeFr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:hint="Synonymes"
+            android:textColor="@color/black" />
+
+
+        <!--Edit text pour genre du mots-->
+        <EditText
+            android:id="@+id/editAntonymeFr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:hint="Antonymes"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <!--Bouton pour ajouter le mot -->
+    <Button
+        android:id="@+id/btnAjoutermotsFr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ajouter"
+        android:textAllCaps="false" />
+
+
+
+</LinearLayout>

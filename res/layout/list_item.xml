@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="12dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginLeft="02dp"
+    android:layout_marginRight="02dp"
+    android:layout_marginBottom="05dp"
+    android:layout_marginTop="12dp"
+    android:background="@color/purple_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+
+        <!--Le mot en français-->
+
+        <TextView
+            android:id="@+id/textViewMotsFrancais"
+            android:layout_width="match_parent"
+            android:text="FRANCAIS"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <!--text view pour le  mot-->
+        <TextView
+            android:id="@+id/txtMotsFr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:textColor="@color/purple_500"
+            android:text="Mots"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--text view pour le mots en français-->
+            <TextView
+                android:id="@+id/txtTypeFr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="Type mots"
+                android:textColor="@color/black" />
+
+
+            <!--text view pour genre du mots-->
+            <TextView
+                android:id="@+id/txtGenreFr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:textAlignment="center"
+                android:text="Genre"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <!--text view pour exemple du mot-->
+        <TextView
+            android:id="@+id/txtExempleFr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Exemple"
+            android:textColor="@color/black" />
+
+
+
+        <!--text view pour la description du mot-->
+        <TextView
+            android:id="@+id/txtDescriptionFr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Description"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--text view pour le synonym du mots-->
+            <TextView
+                android:id="@+id/txtSynonymsFr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Synonyme"
+                android:textColor="@color/black" />
+
+
+            <!--text view pour antonnyme du mots-->
+            <TextView
+                android:id="@+id/txtAntonymsFr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Antonyme"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
